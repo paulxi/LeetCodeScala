@@ -35,7 +35,7 @@ object Solution {
         } else if (j == 0) {
           maxLeft = nums1(i - 1)
         } else {
-          maxLeft = Math.max(nums1(i - 1), nums2(j - 1))
+          maxLeft = scala.math.max(nums1(i - 1), nums2(j - 1))
         }
 
         var minRight = 0
@@ -46,7 +46,7 @@ object Solution {
         } else if (j == n) {
           minRight = nums1(i)
         } else {
-          minRight = Math.min(nums1(i), nums2(j))
+          minRight = scala.math.min(nums1(i), nums2(j))
         }
 
         if ((m + n) % 2 == 1) {
