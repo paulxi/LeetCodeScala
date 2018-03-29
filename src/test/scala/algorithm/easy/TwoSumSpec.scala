@@ -1,6 +1,6 @@
 package com.leetcode.algorithm.easy.TwoSum
 
-import Solution._
+import com.leetcode.algorithm.easy.TwoSum.Solution._
 import org.scalatest._
 
 

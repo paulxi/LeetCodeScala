@@ -1,6 +1,6 @@
 package com.leetcode.algorithm.medium.AddTwoNumbers
 
-import Solution._
+import com.leetcode.algorithm.medium.AddTwoNumbers.Solution._
 import org.scalatest._
 
 class AddTwoNumbersSpec extends FlatSpec with Matchers {
