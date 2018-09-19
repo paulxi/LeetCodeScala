@@ -28,4 +28,8 @@ class RegularExpressionMatchingSpec extends FlatSpec with Matchers {
     isMatch("aaa", "a*") shouldEqual true
   }
 
+  "Case 7" should "return false" in {
+    isMatch("mississippi", "mis*is*ip*.") shouldEqual true
+  }
+
 }

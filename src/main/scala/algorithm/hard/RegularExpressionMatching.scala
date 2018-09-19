@@ -15,7 +15,7 @@ object Solution {
       j <- 0 until p.length
     }
       p.charAt(j) match {
-        case '.' => result(i + 1)(j + 1) = result(i + 1)(j)
+        case '.' => result(i + 1)(j + 1) = result(i)(j)
         case '*' => if (p.charAt(j - 1) != s.charAt(i) && p.charAt(j - 1) != '.') {
           result(i + 1)(j + 1) = result(i + 1)(j - 1)
         } else {
