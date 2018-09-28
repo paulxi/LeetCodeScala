@@ -1,5 +1,6 @@
 package com.leetcode.algorithm.medium.AddTwoNumbers
 
+import com.leetcode.algorithm.common.ListNode
 import com.leetcode.algorithm.medium.AddTwoNumbers.Solution._
 import org.scalatest._
 

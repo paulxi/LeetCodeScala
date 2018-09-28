@@ -1,25 +1,6 @@
 package com.leetcode.algorithm.medium.AddTwoNumbers
 
-class ListNode(var _x: Int = 0) {
-   var next: ListNode = null
-   var x: Int = _x
-
-
-  def canEqual(other: Any): Boolean = other.isInstanceOf[ListNode]
-
-  override def equals(other: Any): Boolean = other match {
-    case that: ListNode =>
-      (that canEqual this) &&
-        next == that.next &&
-        x == that.x
-    case _ => false
-  }
-
-  override def hashCode(): Int = {
-    val state = Seq(next, x)
-    state.map(_.hashCode()).foldLeft(0)((a, b) => 31 * a + b)
-  }
-}
+import com.leetcode.algorithm.common.ListNode
 
 object Solution {
   def addTwoNumbers(l1: ListNode, l2: ListNode): ListNode = {
