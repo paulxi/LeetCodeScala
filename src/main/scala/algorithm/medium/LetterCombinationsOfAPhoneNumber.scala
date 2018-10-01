@@ -17,11 +17,9 @@ object Solution {
       Nil
     } else {
       digits.foldLeft("" :: Nil)((list, char) => {
-        list.flatMap((str) => {
-          LetterValues(char).map((letter) => {
-            str + letter
-          })
-        })
+        for (str <- list;
+             letter <- LetterValues(char))
+          yield str + letter
       })
     }
   }
