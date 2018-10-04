@@ -3,7 +3,7 @@ package com.leetcode.algorithm.easy.MaximumSubarray
 import com.leetcode.algorithm.easy.MaximumSubarray.Solution._
 import org.scalatest._
 
-class MaximumSubarray extends FlatSpec with Matchers {
+class MaximumSubarraySpec extends FlatSpec with Matchers {
   "[-2, 1, -3, 4, -1, 2, 1, -5, 4]" should "return 6" in {
     maxSubArray(Array(-2, 1, -3, 4, -1, 2, 1, -5, 4)) shouldEqual 6
   }
