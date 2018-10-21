@@ -1,5 +1,6 @@
 package com.leetcode.algorithm.medium.MergeIntervals
 
+import com.leetcode.algorithm.common.Interval
 import com.leetcode.algorithm.medium.MergeIntervals.Solution._
 import org.scalatest._
 
