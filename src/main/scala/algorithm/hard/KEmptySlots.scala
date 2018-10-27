@@ -1,4 +1,5 @@
 package com.leetcode.algorithm.hard.KEmptySlots
+import scala.annotation.tailrec
 
 object Solution {
   def kEmptySlots(flowers: Array[Int], k: Int): Int = {
@@ -10,6 +11,7 @@ object Solution {
     find(days, 0, k + 1, k, Int.MaxValue)
   }
 
+  @tailrec
   def find(days: Array[Int], left: Int, right: Int, k: Int, ans: Int): Int = {
     if (right < days.length) {
       val index = days.slice(left + 1, right).indexWhere(day => day < days(left) || day < days(right))
