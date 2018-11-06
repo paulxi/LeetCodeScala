@@ -32,11 +32,11 @@ object Solution {
         false
       } else {
         visited(row)(column) = true
-        if (board(row)(column) == word.charAt(index)) {
-          search(board, word, row - 1, column, index + 1, visited) ||
-            search(board, word, row + 1, column, index + 1, visited) ||
-            search(board, word, row, column - 1, index + 1, visited) ||
-            search(board, word, row, column + 1, index + 1, visited)
+        if (search(board, word, row - 1, column, index + 1, visited) ||
+          search(board, word, row + 1, column, index + 1, visited) ||
+          search(board, word, row, column - 1, index + 1, visited) ||
+          search(board, word, row, column + 1, index + 1, visited)) {
+          true
         } else {
           visited(row)(column) = false
           false
