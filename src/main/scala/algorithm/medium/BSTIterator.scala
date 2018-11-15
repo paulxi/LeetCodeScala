@@ -18,7 +18,7 @@ class BSTIterator(val root: TreeNode) {
       stack = stack.tail
       pushLeftChildren(node.right)
 
-      node.x
+      node.value
     }
   }
 

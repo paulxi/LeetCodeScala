@@ -16,7 +16,7 @@ class Codec {
     if (root == null) {
       str + "null,"
     } else {
-      var result = str + root.x + ","
+      var result = str + root.value + ","
       result = rserialize(root.left, result)
       result = rserialize(root.right, result)
 
